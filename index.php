@@ -42,13 +42,13 @@ include 'functions.php';
     } else {
         foreach ($contacts as $index => $contact) {
             echo "
-        <div class='mb-3 ms-3'>
-            <li class='list-group-item d-inline-block rounded-5'>
-                <p class='d-inline-block text-danger'>Имя: </p> {$contact['name']} - 
-                <p class='d-inline-block text-danger'>Телефон</p>{$contact['phone']}
-            </li> 
-            <a href='functions.php?delete={$index}' class='btn btn-danger d-inline-block mt-3'>Удалить</a>
-        </div> 
+            <div class='mb-3 ms-3'>
+                <li class='list-group-item d-inline-block rounded-5'>
+                    <p class='d-inline-block text-danger'>Имя: </p> {$contact['name']} - 
+                    <p class='d-inline-block text-danger'>Телефон</p>{$contact['phone']}
+                </li> 
+                <a href='functions.php?delete={$index}' class='btn btn-danger d-inline-block mt-3'>Удалить</a>
+            </div> 
         ";
         }
     }
